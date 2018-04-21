@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0"> 
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/public.css">
+	<link rel="stylesheet" href="./css/login.css">
+	<script src="./js/vue.js"></script>
+    <script src="./js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+	<div class="login-user" id="loginmain">
+		<div class="login-part">
+			<h3>账号登录</h3>
+			<form action="" class="form" method="post" name="myform">
+				<input type="text" class="username" placeholder="输入用户名/邮箱/手机号" name="name" v-model="phone">
+				<input type="password" class="userpass" placeholder="输入密码" name="password"v-model="password">
+				<div class="forget-password clearfix">
+					<div class="for-left">
+					    <input type="checkbox" id="remember"><label for="
+					remember">下次自动登陆</label></div>
+					<div class="for-right">
+						<a href="#">忘记密码</a>
+					</div>
+				</div>
+				<div class="login_btn">
+					<a href="javascript:void(0);" @click="click()">登录</a>
+				</div>
+			</form>
+			<div class="line"></div>
+			<div class="third-part">
+				<div class="part-text">第三方帐号登录</div>
+				<div class="icon-list">
+					<a href="#" class="qq"></a>
+					<a href="#" class="weibo"></a>
+					<a href="#" class="baidu"></a>
+					<a href="#" class="cc"></a>
+					<a href="#" class="git"></a>
+				</div>
+				<div class="register-now">
+					<span>还没有CSDN帐号？</span>
+					<span><a href="sign.html">立即注册</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="foot-menu clearfix">
+			<a href="#">公司简介</a><span>|</span><a href="#">公司简介</a><span>|</span><a href="#">公司简介</a><span>|</span><a href="#">公司简介</a><span>|</span><a href="#">公司简介</a><span>|</span><a href="#">公司简介</a><span>|</span><a href="#">公司简介</a><span>|</span><a href="#">公司简介</a><span>|</span><a href="#">公司简介</a>
+		</div>
+	</footer>
+	<script src="./js/login.js"></script>
+</body>
+</html>

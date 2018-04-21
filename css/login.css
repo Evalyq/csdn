@@ -1,0 +1,130 @@
+.login-user{
+    padding: 60px 30px 66px 30px;
+    border-top: 1px solid #e9e9e9
+}
+.login-part{
+	background: #fefefe;
+    border: 1px solid #d5dce5;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.login-part h3{
+	font-size: 1.5em;
+    color: #4d5e73;
+    padding: 25px 30px 15px 30px;
+}
+.form{
+	padding:0 30px;
+}
+.username,.userpass,.uname{
+	background: #fff;
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    border: 1px solid #d5dce5;
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-indent: 23px;
+    outline: 0;
+    font-size: 1.25em;
+    border-radius: 3px;
+}
+.for-left{
+	float: left;
+	font-weight: 700;
+}
+.for-right{
+	float:right;
+}
+.for-left input{
+	vertical-align: middle;
+	margin-right: 10px;
+    border: 1px solid #ccc;
+}
+.for-right a{
+    color: #4d5e73;    
+}
+.login_btn a{
+	background: #c90a16;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    width: 100%;
+    border: solid 1px #c90000;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #fff inset;
+}
+.line{
+	background: #eee;
+    height: 1px;
+    margin-top: 40px;
+}
+.third-part{
+	padding: 20px 52px 35px 30px;
+}
+.part-text{
+    font-size: 1.083em;
+    color: #666;
+    margin-bottom: 11px;
+}
+.icon-list a{
+    display: inline-block;
+    margin-right: 5px;
+    width: 32px;
+    height: 32px;
+    background:url(../image/login-third-party-new.png) no-repeat;
+}
+.icon-list .qq{
+    background-position: 0 0;
+}
+.icon-list .weibo{
+	background-position: -74px 0;
+}
+.icon-list .baidu{
+	background-position: -112px 0;
+}
+.icon-list .cc{
+	background-position: -150px 0;
+}
+.icon-list .qq{
+	background-position: -187px 0;
+}
+.register-now{
+	margin-top: 20px;
+}
+.register-now span{
+	font-size: 1.083em;
+    color: #666;
+    margin-bottom: 11px;
+    margin-right: 15px;
+}
+.register-now span a{
+	color: #428bca;
+} 
+footer{
+    border-top: 1px solid #f0f0f0;
+}
+.foot-menu{
+    font-size: 14px;
+    padding:16px;
+}
+.foot-menu a{
+	color: #666;
+    font-family: 'microsoft yahei';
+    display: block;
+    float: left;
+    height: 20px;
+    margin-bottom: 10px;
+} 
+.foot-menu span{
+	color: #d1d1d1;
+    padding: 0 8px;
+    display: block;
+    float:left;
+    height: 20px;
+    margin-bottom: 10px;
+}

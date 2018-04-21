@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理博客</title>
+	<link rel="stylesheet" href="./css/public.css">
+	<link rel="stylesheet" href="./css/manage.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+	<div id="main">
+		<header class="header">
+			<div class="h-nav  clearfix">
+				<div class="left">
+					<img src="./image/logopc.png" alt="" class="logo">
+					<a href="" class="logo-name">创作中心</a>
+				</div>
+			    <div class="right">
+			    	<a href="" class="write">
+			    		<img src="./image/w-img.png" alt="">写博客
+			    	</a>
+			    	<a href="#" class="user-img"><img src="./image/u-img.png" alt=""></a>
+			    	<a href="" class="use-name">11111111</a>
+			    	<a href="#" class="out">退出</a>
+			    </div>
+			</div>
+		</header>
+		<div class="editbox clearfix">
+			<div class="left">
+				<ul class="menu">
+					<li><a href="#">发布博客</a></li>
+					<li><a href="#">管理博客</a></li>
+				</ul>
+			</div>
+			<div class="edit-box">
+				<div class="main-title">
+					文章管理
+				</div>
+				<div class="main-tab clearfix">
+					<ul class="left mainTab clearfix">
+						<li><a href="#" class="active">全部</a></li>
+						<li><a href="#">全部</a></li>
+						<li><a href="#">全部</a></li>
+						<li><a href="#">全部</a></li>
+					</ul>
+					<div class="search">
+						
+					</div>
+				</div>
+				<div class="tab-content">
+					<ul>
+						<li class="art-list-item" v-for="item in artList">
+							<div class="art-title">
+								<a href="#">{{ item.title }}</a>
+							</div>
+							<div class="art-info clearfix">
+								<div class="left info-item">
+									<span>{{ item.classify_name }}</span>
+									<span>{{ item.date }}</span>
+									<span><img src="./image/book.png" alt="">{{ item.read_num }}</span>
+									<span><img src="./image/commit.png" alt="">0</span>
+								</div>
+								<div class="right operate">
+									<a href="#" @click="see(item)">查看</a>
+									<a href="#">禁止评论</a>
+									<a href="#">置顶</a>
+									<a href="#" @click="del(item)">删除</a>
+									<a href="#" @click="edit(item)">编辑</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+	        </div>
+	    </div>
+	</div>
+    <script type="text/javascript" src="./js/manage.js"></script>
+</body>
+</html>

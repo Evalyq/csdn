@@ -1,0 +1,19 @@
+html,body,div,a,img,span,ul,li,h2,h1,p,input,dl,dt,h3{
+	margin:0;
+	padding:0;
+}
+html,body{
+	font-size: 54.9333px;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.clearfix::after{
+	display: block;
+	content: "";
+	height:0;
+	clear: both;
+}

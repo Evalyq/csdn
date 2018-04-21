@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<title>个人中心</title>
+	<link rel="stylesheet" href="./css/public.css">
+	<link rel="stylesheet" type="text/css" href="./css/mysave.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+	<div id="main">
+		<div class="fix-bar clearfix">
+			<div class="toolbar-left clearfix">
+				<div class="prev-img"></div>
+				<div class="logo"></div>
+			</div>
+			<div class="toolbar-right clearfix">
+				<div class="search-img"></div>
+				<a href="login.html" class="login" v-show="imgShow">登录</a>
+				<a href="mysave.html" class="loginout" v-show="!imgShow"><img src:="img" alt=""></a>
+			</div>
+		</div>
+		<div class="use-info">
+			<div class="info-img"><a href="#"><img :src="useImg" alt=""></a></div>
+			<div>
+				<h3 class="use-name">{{ userName }}</h3>
+				<div class="person">
+					<div><span>关注</span><em>0</em></div>
+					<div><span>粉丝</span><em>0</em></div>
+				</div>
+			</div>
+		</div>
+		<div class="myown-wrap">
+			<div class="w-top">
+				<span>积分<em>0</em></span>
+				<span>c币<em>0</em></span>
+				<span class="right">c币不够？点击<a href="#" class="add">充值</a></span>
+			</div>
+			<div class="down">
+				<span>下载 <a href="#"><img src="./image/down1.png" alt=""></a></span>
+				<span>下载 <a href="#"><img src="./image/blog1.png" alt=""></a></span>
+			</div>
+		</div>
+		<div class="mylist-wrap">
+			<ul class="mylist">
+				<li><a href="postedit.html"><span>我的博客</span><em><img src="./image/jum.png" alt=""></em></a></li>
+				<li><a href="savelist.html"><span>我的收藏</span><em><img src="./image/jum.png" alt=""></em></a></li>
+				<li><a href="savelist.html"><span>我的下载</span><em><img src="./image/jum.png" alt=""></em></a></li>
+			</ul>
+		</div>
+		<div class="loginOut">
+			<a href="javascript:void(0);" @click="out()">退出登录</a>
+		</div>
+	</div>
+	<script src="./js/my.js"></script>
+</body>
+</html>

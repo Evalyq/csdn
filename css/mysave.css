@@ -1,0 +1,208 @@
+html,body{
+	font-size:36px;
+	background-color: #fafafa;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.fix-bar{
+    /*font-size: 12px;*/
+    font-family: 'PingFang SC','Microsoft YaHei',SimHei,Arial,SimSun;
+    color: #333;
+    line-height: 18px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+    padding: 14px 16px;
+    height: 52px;
+    width: 100%;
+    box-sizing:border-box;
+    position: fixed;
+    top:0;
+    left:0;
+}
+.toolbar-left{
+	float: left;
+	width: 67%;
+    height: 24px;
+ }
+.prev-img{
+	float: left;
+	width: 16px;
+	height:16px;
+	background-image: url(../image/prev.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.logo{
+	float: right;
+	width:120px;
+	height: 30px;
+	margin-top: -7px;
+	background-image: url(../image/my.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.toolbar-right{
+	float: right;
+}
+.search-img{
+	float: left;
+	width: 20px;
+	height:20px;
+	background-image:  url(../image/search-img.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 12px;
+}
+.login,.loginout{
+	display: block;
+	float: right;
+	font-size: 14px;
+    color: #C92027;
+}
+.login:visited{
+	color: #999;
+}
+.loginout img{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    border-radius: 12px;
+}
+#main{
+	margin-top: 52px;
+}
+.use-info{
+	margin-top: 1.9rem;
+	background: #fff;
+    padding: .6rem .6rem .6rem 2.8rem;
+    position: relative;
+}
+.info-img{
+	position: absolute;
+	left:0.6rem;
+	top:0.6rem;
+}
+.info-img a{
+	display:inline-block;
+	width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    padding: .025rem;
+    border: .025rem solid #eee;
+}
+.info-img a img{
+	width:100%;
+	height:100%;
+	border-radius: 50%;
+}
+.use-name{
+	font-size: .45rem;
+    color: #4f4f4f;
+    line-height: .6rem;
+    font-weight: 700;
+    margin-bottom: .4rem;
+}
+.person{
+	font-size: 0;
+}
+.person>div{
+	display: inline-block;
+	font-size: .4rem;
+	margin-right: .4rem;
+}
+.person>div>span{
+    color: #9e9e9e;
+}
+.person>div>em{
+	color: #6ab3df;
+    margin-left: .2rem;
+    font-style: normal;
+}
+.myown-wrap{
+    background: #fafafa;
+    padding: .5rem .6rem;
+    font-size:0;
+    border-bottom: solid .025rem #ddd; 
+}
+.w-top{
+	font-size:0;
+}
+.w-top span{
+    font-style: normal;
+    font-size: .35rem;
+    color: #707070;
+    margin-right: .5rem;
+}
+.w-top em{
+	color: #f90;
+    margin-left: .15rem;
+    font-style: normal;
+}
+.add{
+	display: inline-block;
+	height: .6rem;
+    line-height: .6rem;
+    padding: 0 .2rem;
+    font-size: .35rem;
+    color: #fff;
+    background-color: #f44444;
+    border-radius: .1rem;
+    margin-left: .15rem;
+}
+.down{
+	clear: both;
+	padding-top: .4rem;
+}
+.down span{
+	font-size: .35rem;
+    color: #707070;
+    margin-right: .5rem;
+}
+.down img{
+	margin-left: .1rem;
+	vertical-align: text-top;
+    display: inline-block;
+}
+.mylist-wrap{
+	background-color: #fff;
+    margin: .4rem 0 .5rem;
+}
+.mylist li{
+	font-size: 0;
+    border-bottom: solid .025rem #ddd;
+    box-shadow: 0 0 0 0 #ddd, inset 0 0 0 0 #ddd;
+    padding: .3rem .6rem;
+    clear:both;
+}
+.mylist li:last-child{
+	border-bottom: none;
+}
+.mylist li a{
+	display: block;
+	color: #999;
+}
+.mylist li a span{
+	font-size:.4rem;
+	color: #4f4f4f;
+}
+.mylist li a em{
+    float: right;
+}
+.loginOut{
+	margin: .7rem 0;
+    text-align: center;
+}
+.loginOut a{
+	display: inline-block;
+    width: 87%;
+    height: .9rem;
+    line-height: .9rem;
+    background: #f44444;
+    font-size: .35rem;
+    color: #fff;
+    border-radius: .1rem;
+}

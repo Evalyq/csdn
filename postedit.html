@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>写博客</title>
+	<link rel="stylesheet" href="./css/public.css">
+	<link rel="stylesheet" href="./css/postedit.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+	<script type="text/javascript" src="./ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="./ueditor/ueditor.all.min.js"></script>
+	<script type="text/javascript" src="./ueditor/lang/zh-cn/zh-cn.js"></script>
+</head>
+<body>
+	<div id="main">
+		<header class="header">
+			<div class="h-nav  clearfix">
+				<div class="left">
+					<img src="./image/logopc.png" alt="" class="logo">
+					<a href="" class="logo-name">创作中心</a>
+				</div>
+			    <div class="right">
+			    	<a href="" class="write">
+			    		<img src="./image/w-img.png" alt="">写博客
+			    	</a>
+			    	<a href="#" class="user-img"><img src="./image/u-img.png" alt=""></a>
+			    	<a href="" class="use-name">11111111</a>
+			    	<a href="#" class="out">退出</a>
+			    </div>
+			</div>
+		</header>
+		<div class="editbox clearfix">
+			<div class="left">
+				<ul class="menu">
+					<li><a href="#">发布博客</a></li>
+					<li><a href="manage.html">管理博客</a></li>
+				</ul>
+			</div>
+			<div class="edit-box">
+				<div class="e-top clearfix">
+					<!-- <select name="" class="select">
+						<option value="0">请选择</option>
+						<option value="0">请选择</option>
+						<option value="0">请选择</option>
+					</select> -->
+					<input type="text" placeholder="输入文章标题" class="eTitle" v-model="title">
+				</div>
+				<script id="container" name="content" type="text/plain">
+		       
+		        </script>
+			
+				<select class="select" v-model="classify_id">
+						<option  v-for="item in cate" :value="item.id">{{ item.name }}</option>
+			    </select>
+	        
+		        <button  @click="issue">发布</button>
+	        </div>
+	    </div>
+	</div>
+    <script type="text/javascript" src="./js/postedit.js"></script>
+</body>
+</html>

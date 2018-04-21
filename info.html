@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/public.css">
+	<link rel="stylesheet" href="./css/info.css">
+	<script src="./js/vue.js"></script>
+    <script src="./js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+    <div id="main">
+		<div class="fix-bar clearfix">
+			<div class="toolbar-left clearfix">
+				<div class="prev-img"></div>
+				<div class="logo"></div>
+			</div>
+			<div class="toolbar-right clearfix">
+				<div class="search-img"></div>
+				<a href="login.html" class="login" v-show="!imgShow">登录</a>
+				<a href="mysave.html" class="loginout" v-show="imgShow"><img src:="img" alt=""></a>
+			</div>
+		</div>
+		<div>
+			<div>
+			    <div class="article-box">
+					<div class="user-box">
+						<div class="user clearfix">
+							<a href="#"><img class="user-img" :src="useInfo.userimg" alt=""><span>{{ useInfo.name }}</span></a>
+							<a class="btn-focus" href="#">关注</a>
+						</div>
+					</div>
+					<div v-for="item in blogInfo">
+						<div class="info-title">
+							<h1>{{ item.title }}</h1>
+							<div class="info">
+								<span class="type">转载</span>
+								<span class="date">{{ item.createtime }}</span>
+								<span class="readnum">阅读{{ item.read_num }}</span>
+								<span v-show="EditJudge"><a href="postedit.html" @click="edit()">编辑</a></span>
+							</div>
+						</div>
+						<div class="article" :class="more? 'auto':'fix'">
+						    {{ item.content }}
+						</div>
+						<div class="load-more" @click="loadmore()" v-show="!more">
+					        <a href="javascript:void(0);" class="load-more-btn">阅读全文</a>
+				        </div>
+						</div>
+					
+					<div class="user-info">
+						<div class="user clearfix">
+							<a href="#"><img class="user-img" src="./image/3_p5deyt322jacs.jpg" alt=""><span>程序员的那些事_</span></a>
+						</div>
+						<div class="user-info-box">
+							<span>访问量 </span>
+							<span class="num">22万+</span>
+							<span class="num">67</span>
+							<span class="user-more ">博主更多文章&gt;</span>
+						</div>
+					</div>
+			    </div>
+				<div class="art-list">
+					<div class="art-list-item" v-for="item in relatedBlog">
+					    <a href="#">
+						<h1></h1>
+						<div class="art-info">
+							<span class="username">P5dEyT322JACS</span>
+							<span class="read">375次阅读</span>
+							<span class="time">{{ item.date }}</span>
+						</div>
+						</a>
+					</div>
+				</div>
+		    </div>
+			<div class="ad-2">
+				
+			</div>
+			<div class="comment">
+				<div class="comment-title clearfix">
+					<div class="com-num">3条评论</div>
+					<div class="write"><a href=""> 写评论</a></div>
+				</div>
+				<dl class="comment_content">
+					<dt class="">
+						<div class="com-user clearfix">
+							<div class="com-user-info left">
+								<a href="#"><img src="./image/3_weixin_35706300.jpg" alt=""><span>weixin_35706300</span></a>
+							</div>
+							<div class="right reply"><a href="#">回复</a></div>
+						</div>
+						<div class="com-info">
+							<span>没毛病</span>
+							<div class="com-time">
+								2018-03-31 12:07:16 
+								<span class="floor">#3楼</span>
+							</div>
+						</div>
+					</dt>
+				</dl>
+				<div class="nomore-com">
+					没有更多评论了
+				</div>
+			</div>
+			<div class="operate clearfix">
+				<div class="favor"><i></i><span>点赞</span></div>
+				<div class="com"><i></i><span>评论</span></div>
+				<div class="save" @click="save()"><i></i><span>收藏</span></div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/public.js"></script>
+	<script src="./js/info.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+.fix-bar{
+    /*font-size: 12px;*/
+    font-family: 'PingFang SC','Microsoft YaHei',SimHei,Arial,SimSun;
+    color: #333;
+    line-height: 18px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+    padding: 14px 16px;
+    height: 52px;
+    width: 100%;
+    box-sizing:border-box;
+    position: fixed;
+    top:0;
+    left:0;
+}
+.toolbar-left{
+	float: left;
+	width: 67%;
+    height: 24px;
+ }
+.prev-img{
+	float: left;
+	width: 16px;
+	height:16px;
+	background-image: url(../image/prev.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.logo{
+	float: right;
+	width:120px;
+	height: 30px;
+	margin-top: -7px;
+	background-image: url(../image/logob.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.toolbar-right{
+	float: right;
+}
+.search-img{
+	float: left;
+	width: 20px;
+	height:20px;
+	background-image:  url(../image/search-img.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 12px;
+}
+.login,.loginout{
+	display: block;
+	float: right;
+	font-size: 14px;
+    color: #C92027;
+}
+.login:visited{
+	color: #999;
+}
+.loginout img{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    border-radius: 12px;
+}
+#main{
+	margin-top: 52px;
+}
+.mylist-wrap{
+	background-color: #fff;
+    margin: .4rem 0 .5rem;
+}
+.mylist li{
+	font-size: 0;
+    border-bottom: solid .025rem #ddd;
+    box-shadow: 0 0 0 0 #ddd, inset 0 0 0 0 #ddd;
+    padding: .15rem .3rem;
+    clear:both;
+}
+.mylist li:last-child{
+	border-bottom: none;
+}
+.mylist li a{
+	display: block;
+	color: #999;
+	font-size:.25rem;
+}
+.mylist li a span{
+	
+}
+.mylist li a em{
+    float: right;
+}

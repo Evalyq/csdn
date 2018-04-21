@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<title>个人中心</title>
+	<link rel="stylesheet" href="./css/public.css">
+	<link rel="stylesheet" type="text/css" href="./css/savelist.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+	<div id="main">
+		<div class="fix-bar clearfix">
+			<div class="toolbar-left clearfix">
+				<div class="prev-img"></div>
+				<div class="logo"></div>
+			</div>
+			<div class="toolbar-right clearfix">
+				<div class="search-img"></div>
+				<a href="login.html" class="login" v-show="!imgShow">登录</a>
+				<a href="my.html" class="loginout" v-show="imgShow"><img src:="img" alt=""></a>
+			</div>
+		</div>
+		<div class="mylist-wrap">
+			<ul class="mylist">
+				<li v-for=" item in blogList"><a href="#">{{ item.title }}</a></li>
+			</ul>
+		</div>
+	</div>
+	<script src="./js/savelist.js"></script>
+</body>
+</html>
